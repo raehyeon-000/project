@@ -1,0 +1,109 @@
+/* 전체 기본 설정 및 라디오 감성 배경 */
+body {
+    margin: 0;
+    padding: 0;
+    /* 어두운 밤 새벽으로 내려가는 그라데이션 */
+    /* 짙은 네이비(밤)에서 노란빛이 도는 갈색(조명)으로 */
+    background: linear-gradient(to bottom, #0d121c, #302a24); 
+    background-attachment: fixed;
+    /* 텍스트는 순백색이 아닌 따뜻한 미백색 */
+    color: #fcecdb; /* 노란빛이 살짝 도는 흰색 */
+    /* 폰트 설정 */
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 300;
+}
+
+/* 페이지 컨테이너 */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 가운데 정렬 */
+    padding: 40px 20px;
+}
+
+/* 메인 제목 스타일 */
+.main-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-header h1 {
+    font-weight: 400;
+    font-size: 2.5em;
+    color: #ffc48d; /* 노란 조명 느낌의 강조색 */
+    opacity: 0.9;
+}
+
+/* 곡 소개 카드 디자인 */
+.song-card {
+    display: flex; 
+    width: 80%;
+    max-width: 750px; /* 조금 넓게 조정 */
+    background-color: #211d1a; /* 짙은 갈색 배경 */
+    border-radius: 12px; 
+    padding: 25px;
+    margin-bottom: 30px;
+    /* 은은한 주황 조명 효과 */
+    box-shadow: 0 0 10px rgba(255, 196, 141, 0.4); 
+    transition: all 0.4s ease-in-out;
+}
+
+.song-card:hover {
+    transform: scale(1.02); /* 마우스 올렸을 때 미세하게 확대 */
+    box-shadow: 0 0 20px rgba(255, 196, 141, 0.7);
+}
+
+.song-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 25px;
+    /* 이미지에도 은은한 테두리 강조 */
+    border: 1px solid rgba(255, 196, 141, 0.2); 
+}
+
+.song-info {
+    flex-grow: 1;
+}
+
+.song-info h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #ffc48d; /* 노란 조명 강조색 */
+}
+
+.song-info h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 300;
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+.my-opinion {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    white-space: pre-line; /* 줄바꿈 적용 */
+}
+
+/* 유튜브 듣기 버튼 */
+.listen-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc48d; 
+    color: #211d1a; /* 어두운 버튼 텍스트 */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.listen-btn:hover {
+    background-color: #ffedc9; /* hover 시 밝아짐 */
+    transform: translateY(-2px);
+}
