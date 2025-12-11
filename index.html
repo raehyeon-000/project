@@ -33,82 +33,24 @@
             </div>
         </section>
         
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>팀 프로젝트 명곡 플레이리스트</title>
-    <style>
-        body {
-            background-color: #1a1a1a;
-            color: white;
-            font-family: 'Noto Sans KR', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        h1 { color: #f4c542; margin-bottom: 10px; }
-        .subtitle { color: #aaa; margin-bottom: 40px; font-size: 0.9em; }
-        
-        .song-card {
-            background-color: #2a2a2a;
-            border-radius: 15px;
-            padding: 20px;
-            display: flex;
-            gap: 20px;
-            max-width: 600px;
-            width: 90%;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            border: 1px solid #444;
-            align-items: flex-start;
-        }
-        .album-art {
-            width: 120px;
-            height: 120px;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-        .song-info { flex: 1; text-align: left; }
-        .song-title { color: #f4c542; margin: 0 0 5px 0; font-size: 1.5em; }
-        .artist { color: #ddd; font-size: 0.9em; margin: 0 0 15px 0; }
-        .description { font-size: 0.85em; line-height: 1.6; color: #ccc; margin-bottom: 20px; }
-        .play-btn {
-            background-color: #f4c542;
-            color: #1a1a1a;
-            padding: 8px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 0.8em;
-            display: inline-block;
-        }
-        .play-btn:hover { background-color: #e0b030; }
-    </style>
-</head>
-<body>
+        <section class="song-card">
 
-    <h1>팀 프로젝트 명곡 플레이리스트</h1>
-    <p class="subtitle">잔잔한 밤 11시, 라디오 감성으로 듣는 우리 팀의 인생 명곡</p>
-
-    <div class="song-card">
-        <img src="iu-night.jpg" alt="밤편지 앨범 커버" class="album-art">
-        <div class="song-info">
-            <h2 class="song-title">밤편지</h2>
-            <p class="artist">아이유 (IU)</p>
-            <p class="description">
-                우연히 유튜브 알고리즘에 떠서 듣게 되었는데, 첫 소절의 차분한 기타 소리부터 마음이 편안해졌습니다.<br>
-                화려한 악기 없이 담담한 목소리만으로도 감동을 주는 곡입니다.<br>
-                마음을 차분하게 만들어주어서 좋았습니다.
-            </p>
-            <a href="https://www.youtube.com/watch?v=BzYnNdJhZQw" target="_blank" class="play-btn">유튜브에서 듣기</a>
-        </div>
-    </div>
-
-</body>
-</html>
+            
+            <img src="iu-night.jpg" alt="iu 밤편지 이미지" class="song-img">
+            
+            <div class="song-info">
+                <h2>밤편지</h2>
+                <h3>아이유 (IU)</h3>
+                
+                <p class="my-opinion">
+                    우연히 유튜브 알고리즘에 떠서 듣게 되었는데, 첫 소절의 차분한 기타 소리부터 마음이 편안해졌습니다.
+                    화려한 악기 없이 담담한 목소리만으로도 감동을 주는 곡입니다.
+                    마음을 차분하게 만들어주어서 좋았습니다.
+                </p>
+                
+                <a href="https://www.youtube.com/watch?v=BzYnNdJhZQw" target="_blank" class="listen-btn">
+                    유튜브에서 듣기
+                </a>
+            </div>
+        </section>
+     
